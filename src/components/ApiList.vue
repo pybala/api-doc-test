@@ -68,6 +68,6 @@ export default {
   }
   .apiGroupCont h2 {
     position: absolute;
-    left: -200px;
+    left: -100px;
   }
 </style>

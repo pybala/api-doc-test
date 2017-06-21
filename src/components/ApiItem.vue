@@ -1,23 +1,23 @@
 <template>
-    <div class="apiListItem postApiItem">
+    <div class="apiListItem" v-bind:class="apiTypeClass">
         <div class="apiItemHead">
-            <span><i class="fa fa-plus-circle"></i></span>
+            <span class="apiInfoExpand" @click="expandApiInfo"><i class="fa fa-plus-circle" v-bind:class="{ 'fa-minus-circle': expandBody }"></i></span>
             <span class="apiType">{{ item.type }}</span>
             <span class="apiUrl">{{ item.url }}</span>
+            <span class="apiTitle">{{ item.title }}</span>
         </div>
-        <div class="apiItemBody">
+        <div class="apiItemBody" v-show="expandBody">
             <div class="apiDescCont">
                 <h3>Description</h3>
-                <p>Retrieves the list of webinars for an account within a given date range. Page and size parameters are optional. Default page is 0 and default size is 20.
-                  For technical reasons, this call cannot be executed from this documentation. Please use the curl command to execute it.</p>
+                <p>{{ item.summary }}</p>
             </div>
 
             <div class="apiParamsCont clearfix">
                 <h3>Parameters</h3>
 
                 <api-parameter v-for="(apiParam, index) in item.params" :apiParam="apiParam" :key="index"></api-parameter>
-
             </div>
+            <span class="runApi"><i class="fa fa-play"></i> Run</span>
         </div>
     </div>
 </template>
@@ -29,14 +29,24 @@ export default {
   name: 'ApiItem',
 
   components: {
-    ApiParameter,
-    'api-parameter': ApiParameter
+      'api-parameter': ApiParameter
   },
 
   props: ['item'],
 
   data () {
       return {
+      	  'expandBody': false,
+          'apiTypeClass': this.item.type + 'ApiItem'
+      }
+  },
+
+  methods: {
+      expandApiInfo: function () {
+          this.expandBody = !this.expandBody;
+      },
+
+      runApi: function () {
       }
   }
 }
@@ -45,7 +55,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .apiListItem {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 6px;
   }
   .apiItemHead {
@@ -77,7 +87,11 @@ export default {
     border: 1px solid #282828;
     font-size: 15px;
   }
+  .apiInfoExpand {
+    cursor: pointer;
+  }
   .apiItemBody {
+    position: relative;
     padding: 20px;
     text-align: left;
   }
@@ -87,9 +101,32 @@ export default {
   .apiDescCont h3 {
     margin-bottom: 5px;
   }
-
   .apiParamsCont h3 {
     margin-bottom: 10px;
+  }
+  .apiTitle {
+    display: inline-block;
+    font-size: 15px;
+    color: #FFF;
+    float: right;
+    vertical-align: top;
+    margin-top: 5px
+  }
+  .runApi {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 9px 15px 10px;
+    background: #282828;
+    border: 1px solid #1b1b1b;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .runApi .fa {
+    font-size: 14px;
+    margin-right: 3px;
   }
 
   .postApiItem {
@@ -102,4 +139,13 @@ export default {
     background-color: #334d00;
   }
 
+  .getApiItem {
+    border: 1px solid #1D7CA7;
+  }
+  .getApiItem .apiItemHead {
+    background-color: #1D7CA7;
+  }
+  .getApiItem .apiType {
+    background-color: #0e3042;
+  }
 </style>

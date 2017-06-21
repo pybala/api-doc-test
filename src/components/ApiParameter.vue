@@ -4,12 +4,11 @@
           <span class="apiParamKey">{{ apiParam.name }}</span>
       </div>
       <div class="large-6 medium-6 small-8 columns">
-          <div class="apiParamInput">
-              <input type="text" id="" value=""/>
+          <div class="apiParamInput" v-html="getInputHtml()">
           </div>
       </div>
       <div class="large-4 medium-4 small-12 columns">
-          <p>{{ apiParam.description }}</p>
+          <p class="apiParamDesc">{{ apiParam.description }}</p>
       </div>
   </div>
 </template>
@@ -23,6 +22,26 @@ export default {
   data () {
       return {
       }
+  },
+
+  methods: {
+      getInputHtml: function () {
+          let ipHtml = '';
+
+          switch (this.apiParam.type) {
+              case 'text':
+                  ipHtml = '<input type="text" value="'+ this.apiParam.default +'" />';
+                  break;
+
+              case 'file':
+                  ipHtml = '<input type="file" value="" />';
+                  break;
+
+              default:
+          }
+
+          return ipHtml;
+      }
   }
 }
 </script>
@@ -32,5 +51,11 @@ export default {
   .apiParamItem {
     padding: 20px 0 5px;
     border-bottom: 1px solid #DDD;
+  }
+  .apiParamKey {
+    font-weight: bold;
+  }
+  .apiParamDesc {
+    color: #666;
   }
 </style>
