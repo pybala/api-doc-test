@@ -1,0 +1,29 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/upload",
+  "title": "Profile Logo upload",
+  "summary": "",
+  "type": "post",
+  "params": [
+      {
+          "name": "path",
+          "type": "text",
+          "default": "",
+          "description": "",
+          "note": ""
+      },
+      {
+          "name": "operation",
+          "type": "text",
+          "default": "logo",
+          "description": "",
+          "note": ""
+      },
+      {
+          "name": "file",
+          "type": "file",
+          "default": "",
+          "description": "",
+          "note": ""
+      }
+  ]
+}
