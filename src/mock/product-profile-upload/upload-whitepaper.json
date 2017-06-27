@@ -1,0 +1,36 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/upload",
+  "title": "Product Whitepapers Upload",
+  "summary": "Uploading Logo and Images to Marketplace",
+  "type": "post",
+  "params": [
+      {
+          "name": "path",
+          "type": "text",
+          "default": "/content/ready/partners/10/10zig-technology/10zig-5872v",
+          "description": "AEM Product path",
+          "note": ""
+      },
+      {
+          "name": "operation",
+          "type": "text",
+          "default": "whitepapers",
+          "description": "Type: whitepaper",
+          "note": ""
+      },
+      {
+          "name": "title",
+          "type": "text",
+          "default": "'Test whitepaper title'",
+          "description": "Title of the whitepaper",
+          "note": ""
+      },
+      {
+          "name": "file",
+          "type": "file",
+          "default": "",
+          "description": "File input",
+          "note": ""
+      }
+  ]
+}

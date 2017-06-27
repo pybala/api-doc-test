@@ -10,20 +10,6 @@
           "default": "",
           "description": "",
           "note": ""
-      },
-      {
-          "name": "operation",
-          "type": "text",
-          "default": "logo",
-          "description": "",
-          "note": ""
-      },
-      {
-          "name": "file",
-          "type": "file",
-          "default": "",
-          "description": "",
-          "note": ""
       }
   ]
 }

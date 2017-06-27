@@ -18,13 +18,15 @@ import ApiItem from './ApiItem'
 import apiData from '../mock/apis.json';
 
 export default {
+  name: 'ApiList',
+
   components: {
     'api-item': ApiItem
   },
 
   data () {
       return {
-          appTitle: 'API Documentation',
+          appTitle: 'API Testing',
           apiItems: []
       }
   },
@@ -65,9 +67,12 @@ export default {
   }
   .apiGroupCont {
     position: relative;
+    margin-bottom: 40px;
   }
   .apiGroupCont h2 {
     position: absolute;
-    left: -100px;
+    left: -175px;
+    font-size: 16px;
+    font-weight: bold;
   }
 </style>

@@ -27,14 +27,30 @@ export default {
   methods: {
       getInputHtml: function () {
           let ipHtml = '';
+          let defaultVal = this.apiParam.default;
+          let elemAttrs = 'data-param=' + this.apiParam.name;
+          elemAttrs += ' class="apiInput"';
+
+          if ( this.apiParam.type !== 'textarea' ) {
+              elemAttrs += ' value=' + this.apiParam.default;
+          }
+
+          if ( typeof defaultVal === 'object' ) {
+              defaultVal = JSON.stringify(defaultVal);
+          }
 
           switch (this.apiParam.type) {
+
               case 'text':
-                  ipHtml = '<input type="text" value="'+ this.apiParam.default +'" />';
+                  ipHtml = '<input type="text" '+ elemAttrs +' />';
+                  break;
+
+              case 'textarea':
+                  ipHtml = '<textarea '+ elemAttrs +'>'+ defaultVal +'</textarea>';
                   break;
 
               case 'file':
-                  ipHtml = '<input type="file" value="" />';
+                  ipHtml = '<input type="file" '+ elemAttrs +' />';
                   break;
 
               default:
@@ -48,6 +64,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  textarea {
+    height: 250px;
+  }
   .apiParamItem {
     padding: 20px 0 5px;
     border-bottom: 1px solid #DDD;
