@@ -19,6 +19,7 @@ const postApiService = (formData, hasFile) => {
         method: 'post',
         //url: 'http://bala.citrix.com/kits/public/services/api-test',
         url: 'https://citrixreadyqa.citrix.com/kits/services/api-test',
+        //url: 'https://crvp-qa.sky.citrix.com/services/api-test',
         data: formData,
         config: config
     });
