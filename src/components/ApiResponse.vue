@@ -1,6 +1,6 @@
 <template>
   <div class="apiResultCont clearfix">
-      <div class="large-7 medium-6 small-12 columns">
+      <div class="large-12 medium-12 small-12 columns">
           <div class="apiResponseCont">
               <h6>RESPONSE</h6>
               <p class="respStatus">Status: <span>{{ status }}</span></p>
@@ -9,15 +9,16 @@
                       {{ prettyResp }}
                   </pre>
               </div>
+              <span class="respDetails"></span>
           </div>
       </div>
-      <div class="large-5 medium-6 small-12 columns">
+      <!--div class="large-5 medium-6 small-12 columns">
           <div class="apiCurlCont">
               <h6>CURL</h6>
               <div class="apiCurlBody">
               </div>
           </div>
-      </div>
+      </div-->
   </div>
 </template>
 
@@ -72,5 +73,8 @@ export default {
   }
   .respStatus span {
     color: #2a9fd6;
+  }
+  .respDetails {
+    display: none;
   }
 </style>

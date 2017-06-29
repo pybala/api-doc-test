@@ -85,12 +85,17 @@ export default {
               formData.append(paramKey, postParams[paramKey]);
           }
 
+
           apiService.postApiService(formData, hasFile).then( function(respData) {
               console.log( respData );
               let respCont = itemNode.querySelector('.apiResultCont');
+              respCont.style.display = 'block';
+
+              //ToDo: remove later
+              respCont.querySelector('.respDetails').innerText = JSON.stringify(respData);
+
               //respData = JSON.parse(respData);
               self.respData = respData;
-              //respCont.style.display = 'block';
           }).catch(function(err) {});
       },
 
