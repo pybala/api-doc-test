@@ -1,0 +1,29 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/upload",
+  "title": "Product MDX Upload",
+  "summary": "Uploading MDX for a app in marketplace",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/10/10zig-technology/10zig-5872v",
+      "description": "AEM App path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "default": "downloadmdxpackage",
+      "description": "Type: mdx package",
+      "note": ""
+    },
+    {
+      "name": "file",
+      "type": "file",
+      "default": "",
+      "description": "File input",
+      "note": ""
+    }
+  ]
+}

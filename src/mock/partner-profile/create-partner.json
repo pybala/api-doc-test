@@ -1,0 +1,26 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/createPartner",
+  "title": "New partner profile",
+  "summary": "Creating new profile",
+  "type": "post",
+  "params": [
+      {
+          "name": "jsondata",
+          "type": "textarea",
+          "default": {
+              "marketplaceAdminStatus": "live",
+              "partnerAdminStatus": "live",
+              "status": "approved",
+              "submitas": "approved",
+              "synopsis": "The10ZiG5872visahighperformanceLinuxThinClientforthemost",
+              "description": "flexibility and reliability to any environment.",
+              "title": "Test partner 1",
+              "orgID":"8727631782",
+              "decliningReasons": "",
+              "language": "en_us"
+          },
+          "description": "Input data in json format",
+          "note": ""
+      }
+  ]
+}

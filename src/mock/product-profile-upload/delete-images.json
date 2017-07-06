@@ -1,0 +1,29 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/deleteAssets",
+  "title": "Delete product images",
+  "summary": "Delete images",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/ad/adobe-systems/adobe-reader-x",
+      "description": "AEM product path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "default": "images",
+      "description": "Type: images",
+      "note": ""
+    },
+    {
+      "name": "file",
+      "type": "text",
+      "default": "logo.png",
+      "description": "file name",
+      "note": ""
+    }
+  ]
+}

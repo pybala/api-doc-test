@@ -1,14 +1,14 @@
 {
   "url": "https://readyadminqa.ice.citrix.com/bin/ready/upload",
-  "title": "Product Brochures Upload",
-  "summary": "Uploading Logo and Images to Marketplace",
+  "title": "Partner Brochures Upload",
+  "summary": "Uploading Partner Brochures in Marketplace",
   "type": "post",
   "params": [
       {
           "name": "path",
           "type": "text",
-          "default": "/content/ready/partners/10/10zig-technology/10zig-5872v",
-          "description": "AEM Product path",
+          "default": "/content/ready/partners/10/10zig-technology",
+          "description": "AEM Partner path",
           "note": ""
       },
       {

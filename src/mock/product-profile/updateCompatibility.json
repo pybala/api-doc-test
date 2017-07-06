@@ -1,0 +1,30 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/updateCompatibility",
+  "title": "Update product compatibilities",
+  "summary": "compatibility update for products",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/10/10zig-technology/10zig-5872v",
+      "description": "Product path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "textarea",
+      "default":"publish",
+      "descritption":"operation can be either save or publish",
+      "note":""
+
+    },
+    {
+      "name": "values",
+      "type": "textarea",
+      "default": "XenApp 7.5, XenDesktop 7.5",
+      "description": "Input data in string format",
+      "note": ""
+    }
+  ]
+}

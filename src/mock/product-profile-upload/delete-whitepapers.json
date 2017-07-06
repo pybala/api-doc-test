@@ -1,0 +1,37 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/deleteAssets",
+  "title": "Delete whitepapers",
+  "summary": "Delete whitepapers",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/ad/adobe-systems/adobe-reader-x",
+      "description": "AEM product path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "default": "whitepapers",
+      "description": "Type: whitepapers",
+      "note": ""
+    },
+    {
+      "name": "file",
+      "type": "text",
+      "default": "mybrochures",
+      "description": "file name ",
+      "note": ""
+    },
+    {
+      "name": "md5",
+      "type": "text",
+      "default": "09867fe70cb1d432b6e00e9602916684",
+      "description": "md5 derived from image title",
+      "note": ""
+    }
+
+  ]
+}

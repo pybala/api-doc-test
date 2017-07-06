@@ -1,6 +1,6 @@
 {
   "url": "https://readyadminqa.ice.citrix.com/bin/ready/createProduct",
-  "title": "Updaing product profile",
+  "title": "Updating product profile",
   "summary": "Product profile update",
   "type": "post",
   "params": [

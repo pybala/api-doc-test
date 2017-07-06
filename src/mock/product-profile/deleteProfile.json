@@ -1,0 +1,15 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/deleteProfile",
+  "title": "Deleting product profile",
+  "summary": "Product profile delete",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/te/testcreatepartner",
+      "description": "Partner path",
+      "note": ""
+    }
+  ]
+}

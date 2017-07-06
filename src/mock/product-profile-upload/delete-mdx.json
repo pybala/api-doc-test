@@ -1,0 +1,29 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/deleteAssets",
+  "title": "Delete app mdx",
+  "summary": "Delete downloadmdxpackage",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/ad/adobe-systems/adobe-reader-x",
+      "description": "AEM product path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "default": "downloadmdxpackage",
+      "description": "Type: mdx",
+      "note": ""
+    },
+    {
+      "name": "file",
+      "type": "text",
+      "default": "logo.png",
+      "description": "file name",
+      "note": ""
+    }
+  ]
+}

@@ -1,28 +1,28 @@
 {
   "url": "https://readyadminqa.ice.citrix.com/bin/ready/upload",
-  "title": "Product Whitepapers Upload",
-  "summary": "Uploading Logo and Images to Marketplace",
+  "title": "Partner case-studies Upload",
+  "summary": "Uploading partner casestudies",
   "type": "post",
   "params": [
       {
           "name": "path",
           "type": "text",
-          "default": "/content/ready/partners/10/10zig-technology/10zig-5872v",
-          "description": "AEM Product path",
+          "default": "/content/ready/partners/10/10zig-technology",
+          "description": "AEM Partner path",
           "note": ""
       },
       {
           "name": "operation",
           "type": "text",
-          "default": "whitepapers",
-          "description": "Type: whitepaper",
+          "default": "casestudies",
+          "description": "Type: case-studies",
           "note": ""
       },
       {
           "name": "title",
           "type": "text",
-          "default": "'Test whitepaper title'",
-          "description": "Title of the whitepaper",
+          "default": "mybrochures",
+          "description": "Title of the case-study",
           "note": ""
       },
       {

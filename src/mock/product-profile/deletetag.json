@@ -1,0 +1,20 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/deletetag",
+  "title": "Deleting tags to product profile",
+  "summary": "deleting tags",
+  "type": "post",
+  "params": [
+    {
+      "name": "jsondata",
+      "type": "textarea",
+      "default": {
+        "level1":"c1-applications",
+        "level2":"c2-desktop-applications",
+        "level3":"g-application-type",
+        "tag":"testtag"
+      },
+      "description": "Input data in json format",
+      "note": ""
+    }
+  ]
+}

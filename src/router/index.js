@@ -9,12 +9,12 @@ const router = new Router({
     mode: 'history',
     routes: [
         {
-            path: '/',
+            path: '/kits/api-test',
             component: ApiGroups,
             name: 'home'
         },
         {
-            path: '/api-list/:id',
+            path: '/kits/api-test/api-list/:id',
             component: ApiList,
             name: 'api-list'
         }

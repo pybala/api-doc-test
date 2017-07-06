@@ -1,0 +1,29 @@
+{
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/upload",
+  "title": "Partner Logo Upload",
+  "summary": "Uploading Partner Logo in Marketplace",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/10/10zig-technology",
+      "description": "AEM Product path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "default": "logo",
+      "description": "Type: logo",
+      "note": ""
+    },
+    {
+      "name": "file",
+      "type": "file",
+      "default": "",
+      "description": "File input",
+      "note": ""
+    }
+  ]
+}
