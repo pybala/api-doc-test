@@ -13,7 +13,7 @@
                 <p>{{ item.summary }}</p>
             </div>
 
-            <div class="apiParamsCont clearfix">
+            <div class="apiParamsCont clearfix" v-if="item.params">
                 <h3>Parameters</h3>
 
                 <api-parameter v-for="(apiParam, index) in item.params" :apiParam="apiParam" :key="index"></api-parameter>
@@ -29,6 +29,7 @@
 import ApiParameter from './ApiParameter'
 import ApiResponse from './ApiResponse'
 import apiService from '../utils/clientUtil'
+let Prism = require('prismjs');
 
 export default {
   name: 'ApiItem',
@@ -85,10 +86,21 @@ export default {
               formData.append(paramKey, postParams[paramKey]);
           }
 
+          /*
+          let respData = {"title": "TestProduct1234","certifiedseals": {"mddx": "mddx"}};
+          respData = JSON.stringify(respData, null, 4);
+          var html = Prism.highlight(respData, Prism.languages.js);
+          let respCont = itemNode.querySelector('.apiResultCont');
+          respCont.querySelector('.language-js').innerHTML = html;
+          respCont.style.display = 'block';
+          */
 
           apiService.postApiService(formData, hasFile).then( function(respData) {
-              console.log( respData );
               let respCont = itemNode.querySelector('.apiResultCont');
+
+              respData = JSON.stringify(respData, null, 4);
+              respCont.querySelector('.language-js').innerHTML = Prism.highlight(respData, Prism.languages.js);
+
               respCont.style.display = 'block';
 
               //ToDo: remove later

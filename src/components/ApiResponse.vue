@@ -4,10 +4,13 @@
           <div class="apiResponseCont">
               <h6>RESPONSE</h6>
               <p class="respStatus">Status: <span>{{ status }}</span></p>
-              <div class="apiResponseBody" >
-                  <pre>
-                      {{ prettyResp }}
+              <div class="apiResponseBody">
+                  <pre class="language-js">
+                    <code class="language-js"></code>
                   </pre>
+                  <!--pre>
+                      {{ prettyResp }}
+                  </pre-->
               </div>
               <span class="respDetails"></span>
           </div>

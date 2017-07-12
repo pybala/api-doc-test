@@ -46,5 +46,12 @@
       "partner-profile/update-partner",
       "partner-profile/delete-partner"
     ]
+  },
+  {
+    "title": "CRVP User services",
+    "files": [
+      "crvp-user-services/get-user",
+      "crvp-user-services/add-user"
+    ]
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "url": "https://readyadminqa.ice.citrix.com/bin/ready/createProduct",
+  "url": "https://readyadminqa.ice.citrix.com/bin/ready/createPartner",
   "title": "Updating partner profile",
   "summary": "Partner profile update",
   "type": "post",
@@ -8,17 +8,14 @@
           "name": "path",
           "type": "text",
           "default": "/content/ready/partners/10/10zig-technology",
-          "description": "Product path",
+          "description": "Partner path",
           "note": ""
       },
       {
           "name": "jsondata",
           "type": "textarea",
           "default": {
-              "description": "Update: partner profile updated.",
-              "title":"updated-partner",
-              "orgID": "654833"
-
+              "description": "Update: partner profile updated."
           },
           "description": "Input data in json format",
           "note": ""

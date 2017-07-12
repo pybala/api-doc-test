@@ -1,0 +1,6 @@
+{
+  "url": "citrixreadyqa.citrix.com/kits/services/get-user/mfossen1966",
+  "title": "Getting Citrix user details",
+  "summary": "Citrix user information from CitrixKey services",
+  "type": "get"
+}
