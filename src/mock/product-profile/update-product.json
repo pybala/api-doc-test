@@ -1,0 +1,36 @@
+{
+  "url": "https://bala.test.com/bin/ready/createProduct",
+  "title": "Updating product profile",
+  "summary": "Product profile update",
+  "type": "post",
+  "params": [
+      {
+          "name": "path",
+          "type": "text",
+          "default": "/content/ready/partners/10/10zig-technology/10zig-5872v",
+          "description": "Product path",
+          "note": ""
+      },
+      {
+          "name": "jsondata",
+          "type": "textarea",
+          "default": {
+              "description": "Update: flexibility and reliability to any environment.",
+              "tags": [
+                  "ready:c1-thin-clients",
+                  "ready:c1-thin-clients/g-hdx-level/f-hdx-ready"
+              ],
+              "compatibility": [
+                  "XenDesktop7.5",
+                  "XenApp7.5"
+              ],
+              "industry": [
+                  "education",
+                  "healthcare"
+              ]
+          },
+          "description": "Input data in json format",
+          "note": ""
+      }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "url": "https://bala.test.com/bin/ready/deleteAssets",
+  "title": "Delete partner logo",
+  "summary": "Delete partner logo",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/10/10zig-technology",
+      "description": "AEM Partner path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "default": "logo",
+      "description": "Type: logo",
+      "note": ""
+    },
+    {
+      "name": "file",
+      "type": "text",
+      "default": "logo.png",
+      "description": "file name ",
+      "note": ""
+    }
+  ]
+}

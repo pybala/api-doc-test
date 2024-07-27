@@ -1,0 +1,15 @@
+{
+    "url": "bala.test.com/kits/services/add-user",
+    "title": "Adding new user to CRVP",
+    "summary": "Pulls user details from SSO, adds in to CRVP. Role also will be created and user will be added to it.",
+    "type": "post",
+    "params": [
+        {
+            "name": "username",
+            "type": "text",
+            "default": "mfossen1966",
+            "description": "Test Username",
+            "note": ""
+        }
+    ]
+}

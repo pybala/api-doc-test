@@ -1,0 +1,36 @@
+{
+  "url": "https://bala.test.com/bin/ready/upload",
+  "title": "Product References Upload",
+  "summary": "Uploading Logo and Images to Marketplace",
+  "type": "post",
+  "params": [
+      {
+          "name": "path",
+          "type": "text",
+          "default": "/content/ready/partners/10/10zig-technology/10zig-5872v",
+          "description": "AEM Product path",
+          "note": ""
+      },
+      {
+          "name": "operation",
+          "type": "text",
+          "default": "videos",
+          "description": "Type: Reference",
+          "note": ""
+      },
+      {
+          "name": "url",
+          "type": "text",
+          "default": "https://bala.test.com",
+          "description": "URL: starting with http or https",
+          "note": ""
+      },
+      {
+          "name": "title",
+          "type": "text",
+          "default": "mybrochures",
+          "description": "Title of the reference",
+          "note": ""
+      }
+  ]
+}

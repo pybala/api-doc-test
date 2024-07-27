@@ -1,0 +1,37 @@
+{
+  "url": "https://bala.test.com/bin/ready/deleteAssets",
+  "title": "Delete casestudies",
+  "summary": "Delete casestudies",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/10/10zig-technology",
+      "description": "AEM Partner path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "default": "casestudies",
+      "description": "Type: casestudies",
+      "note": ""
+    },
+    {
+      "name": "file",
+      "type": "text",
+      "default": "mybrochures",
+      "description": "file name ",
+      "note": ""
+    },
+    {
+      "name": "md5",
+      "type": "text",
+      "default": "09867fe70cb1d432b6e00e9602916684",
+      "description": "md5 derived from image title",
+      "note": ""
+    }
+
+  ]
+}

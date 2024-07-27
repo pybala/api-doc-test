@@ -1,0 +1,57 @@
+[
+  {
+      "title": "Product Assets Upload",
+      "files": [
+          "product-profile-upload/upload-logo",
+          "product-profile-upload/upload-images",
+          "product-profile-upload/delete-images",
+          "product-profile-upload/upload-brochure",
+          "product-profile-upload/upload-reference",
+          "product-profile-upload/upload-whitepapers",
+          "product-profile-upload/delete-whitepapers",
+          "product-profile-upload/upload-mdx",
+          "product-profile-upload/delete-mdx"
+      ]
+  },
+  {
+    "title": "Partner Assets Upload",
+    "files": [
+      "partner-profile-upload/upload-logo",
+      "partner-profile-upload/delete-logo",
+      "partner-profile-upload/upload-brochure",
+      "partner-profile-upload/delete-brochure",
+      "partner-profile-upload/upload-casestudies",
+      "partner-profile-upload/delete-casestudies",
+      "partner-profile-upload/upload-reference",
+      "partner-profile-upload/delete-reference"
+
+    ]
+  },
+  {
+      "title": "Product Profile creation",
+      "files": [
+          "product-profile/create-product",
+          "product-profile/update-product",
+          "product-profile/addtag",
+          "product-profile/updateCompatibility",
+          "product-profile/deletetag",
+          "product-profile/delete-product"
+
+      ]
+  },
+  {
+    "title": "Partner Profile creation",
+    "files": [
+      "partner-profile/create-partner",
+      "partner-profile/update-partner",
+      "partner-profile/delete-partner"
+    ]
+  },
+  {
+    "title": "CRVP User services",
+    "files": [
+      "crvp-user-services/get-user",
+      "crvp-user-services/add-user"
+    ]
+  }
+]

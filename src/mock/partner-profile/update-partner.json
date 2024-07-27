@@ -1,0 +1,24 @@
+{
+  "url": "https://bala.test.com/bin/ready/createPartner",
+  "title": "Updating partner profile",
+  "summary": "Partner profile update",
+  "type": "post",
+  "params": [
+      {
+          "name": "path",
+          "type": "text",
+          "default": "/content/ready/partners/10/10zig-technology",
+          "description": "Partner path",
+          "note": ""
+      },
+      {
+          "name": "jsondata",
+          "type": "textarea",
+          "default": {
+              "description": "Update: partner profile updated."
+          },
+          "description": "Input data in json format",
+          "note": ""
+      }
+  ]
+}

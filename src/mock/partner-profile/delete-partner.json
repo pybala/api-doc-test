@@ -1,0 +1,15 @@
+{
+  "url": "https://bala.test.com/bin/ready/deleteProfile",
+  "title": "Delete partner profile",
+  "summary": "Partner profile delete",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/te/testpartner1",
+      "description": "Partner path",
+      "note": ""
+    }
+  ]
+}

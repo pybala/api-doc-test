@@ -1,0 +1,48 @@
+{
+  "url": "https://bala.test.com/bin/ready/createProduct",
+  "title": "New product profile",
+  "summary": "Creating new profile",
+  "type": "post",
+  "params": [
+      {
+          "name": "path",
+          "type": "text",
+          "default": "/content/ready/partners/10/10zig-technology",
+          "description": "Partner path",
+          "note": ""
+      },
+      {
+          "name": "jsondata",
+          "type": "textarea",
+          "default": {
+              "marketplaceAdminStatus": "live",
+              "partnerAdminStatus": "live",
+              "status": "approved",
+              "submitas": "approved",
+              "synopsis": "The10ZiG5872visahighperformanceLinuxThinClientforthemost",
+              "description": "flexibility and reliability to any environment.",
+              "tags": [
+                  "ready:c1-thin-clients",
+                  "ready:c1-thin-clients/g-hdx-level/f-hdx-ready",
+                  "ready:c1-thin-clients/g-hdx-level"
+              ],
+              "compatibility": [
+                  "XenDesktop7.5",
+                  "XenApp7.5"
+              ],
+              "industry": [
+                  "education",
+                  "financial-services"
+              ],
+              "title": "Test product 1",
+              "decliningReasons": "",
+              "downloadmdxpackage": "",
+              "jcr:isCheckedOut": "true",
+              "language": "en_us",
+              "jcr:mixinTypes": "mix:versionable"
+          },
+          "description": "Input data in json format",
+          "note": ""
+      }
+  ]
+}

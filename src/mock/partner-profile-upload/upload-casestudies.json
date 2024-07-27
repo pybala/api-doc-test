@@ -1,0 +1,36 @@
+{
+  "url": "https://bala.test.com/bin/ready/upload",
+  "title": "Partner case-studies Upload",
+  "summary": "Uploading partner casestudies",
+  "type": "post",
+  "params": [
+      {
+          "name": "path",
+          "type": "text",
+          "default": "/content/ready/partners/10/10zig-technology",
+          "description": "AEM Partner path",
+          "note": ""
+      },
+      {
+          "name": "operation",
+          "type": "text",
+          "default": "casestudies",
+          "description": "Type: case-studies",
+          "note": ""
+      },
+      {
+          "name": "title",
+          "type": "text",
+          "default": "mybrochures",
+          "description": "Title of the case-study",
+          "note": ""
+      },
+      {
+          "name": "file",
+          "type": "file",
+          "default": "",
+          "description": "File input",
+          "note": ""
+      }
+  ]
+}

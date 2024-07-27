@@ -1,0 +1,30 @@
+{
+  "url": "https://bala.test.com/bin/ready/deleteAssets",
+  "title": "Delete references",
+  "summary": "Delete references",
+  "type": "post",
+  "params": [
+    {
+      "name": "path",
+      "type": "text",
+      "default": "/content/ready/partners/10/10zig-technology",
+      "description": "AEM Partner path",
+      "note": ""
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "default": "videos",
+      "description": "Type: references",
+      "note": ""
+    },
+    {
+      "name": "md5",
+      "type": "text",
+      "default": "09867fe70cb1d432b6e00e9602916684",
+      "description": "md5 derived from image title",
+      "note": ""
+    }
+
+  ]
+}
